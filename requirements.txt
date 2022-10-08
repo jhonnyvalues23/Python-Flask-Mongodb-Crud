@@ -17,3 +17,4 @@ six==1.16.0
 types-cryptography==3.3.23
 Werkzeug==2.2.2
 zipp==3.8.1
+gunicorn
