@@ -13,7 +13,7 @@ connection_url = 'mongodb+srv://database:database@cluster0.sk6ftrt.mongodb.net/?
 
 app = Flask(__name__)
 app.config["JWT_SECRET_KEY"] = "super-secret"
-client = pymongo.MongoClient(connection_url)
+client = pymongo.MongoClient(connection_url,connect=flase)
 jwt = JWTManager(app)
 Database = client.get_database('Example')
 SampleTable = Database.SampleTable
